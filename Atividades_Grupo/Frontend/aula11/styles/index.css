@@ -1,0 +1,99 @@
+body {
+    max-width: 100%;
+    min-height: 100vh;
+    font-family: cursive;
+}
+
+header {
+    width: 100%;
+    background-color: #b9cbff;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #222;
+    height: 20vh;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+
+}
+
+.logo-image {
+    height: 100%;
+    width: auto;
+}
+
+.logo-image img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.title {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -20px;
+}
+
+.title h1 {
+    font-size: larger;
+}
+
+.title h2 {
+    font-size: smaller;
+    opacity: .6;
+}
+
+
+.logo-title {
+    display: flex;
+    text-align: center;
+}
+
+.menu-container {
+    margin-right: 60px;
+}
+
+.menu-container ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-container ul li {
+    padding: 3px 15px;
+}
+
+.menu-container ul li a {
+    transition: opacity 0.2s ease;
+    opacity: .7;
+    padding: 5px;
+}
+
+.menu-container ul li a:hover {
+    opacity: .4;
+}
+
+.logo-container .logo-title1 {
+    color: #906443;
+}
+
+.logo-container .logo-title2 {
+    
+}
+
+.logo-container .logo-title3 {
+    color: #d0a823;
+}
+
+/* Content >>>>> */
+main {
+    width: 100%;
+    height: 400px;
+}
