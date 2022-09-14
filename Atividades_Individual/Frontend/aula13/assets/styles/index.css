@@ -33,6 +33,10 @@ nav {
   z-index: 10;
 }
 
+nav a {
+    color: white;
+}
+
 .nav-menu {
   flex: 1;
   height: 5vh;
@@ -62,7 +66,7 @@ nav {
 .initial-content {
   flex: 1;
   display: flex;
-  padding: 0 20% 0 20%;
+  padding: 0 10% 0 10%;
   justify-content: space-between;
   margin-top: 40px;
 }
@@ -75,7 +79,7 @@ nav {
   background-color: rgb(26, 26, 26);
   text-align: center;
   transform: scale(0.98);
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 
 .cart:hover {
@@ -88,16 +92,21 @@ nav {
   box-shadow: 9px 11px 10px -8px rgba(0, 0, 0, 0.65);
 }
 
+.cart-image {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cart-image img {
-    max-height: 140px;
-    width: 100%;
+  height: 140px;
+  width: 100%;
 }
 
 .subtitle {
-    font-size: 24px;
-    color: #fff;
-    text-align: center;
-    margin: 60px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin: 60px;
 }
 
 .cart .cart-content {
@@ -118,44 +127,63 @@ nav {
 
 /* Projects */
 .projects {
-    flex: 1;
+  flex: 1;
 }
 
 .project {
-    display: flex;
-    margin-top: 60px;
+  display: flex;
+  margin-top: 60px;
 }
 
 .project-left {
-    width: 70vw;
-    
-    display: flex;
-    justify-content: center;
+  width: 70vw;
+
+  display: flex;
+  justify-content: center;
 }
 
 .project-left img {
-    height: 95vh;
-    object-fit: cover;
-    object-position: center;
+  height: 95vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-right {
-    width: 30vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .project-right {
-    margin: 40px;
-    text-align: center;
+  margin: 40px;
+  text-align: center;
 }
 
 .reverse {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
+/* Medias */
+@media screen and (max-width: 700px) {
+  .initial-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10%;
+    gap: 5;
+  }
+
+  .initial-content .cart{
+    width: 100%;
+  }
+
+  header {
+    font-size: 3rem;
+  }
+}
 
 /* Animations */
 
