@@ -1,91 +1,85 @@
 :root {
-    --global-dark-color: #0a0310;
-    --global-purple-primary-color: #49007e;
-    --global-purple-secondary-color: #4b004c;
+  --global-dark-color: #0a0310;
+  --global-purple-primary-color: #49007e;
+  --global-purple-secondary-color: #4b004c;
 
-    --global-backend-color: #641f5e;
-    --global-frontend-color: #65ac92;
+  --global-backend-color: #641f5e;
+  --global-frontend-color: #65ac92;
 }
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--global-dark-color);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--global-dark-color);
 }
 
 main {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .title {
-    text-align: center;
-    color: white;
-    font-size: 1.4rem;
+  text-align: center;
+  color: white;
+  font-size: 1.4rem;
 }
 
 .menu {
-    background-color: var(--global-purple-secondary-color);
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
+  background-color: var(--global-purple-secondary-color);
+  flex: 1;
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 
 .menu h1 {
-    font-size: larger;
-    color: white;
-    padding: 30px 0px;
+  font-size: larger;
+  color: white;
+  padding: 30px 0px;
 }
 
-.image-gallery {
-    flex: 1;
-    padding: 30px 60px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6;
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 100px;
 }
 
 .card {
-    width: 20%;
-    height: 300px;
-    background-color: white;
-    transform: scale(0.90);
-    transition: transform .2s ease;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    border-radius: 33px;
-    overflow: hidden;
+  width: 33.333%;
+  min-height: 500px;
+  background-color: white;
+  transition: transform 0.2s ease;
+  justify-content: center;
+  border-radius: 12px;
+  transform: scale(0.97);
+  padding: 20px 30px;
 }
 
 .card h2 {
-    font-size: 1.5rem;
-    position: absolute;
-    margin-top: 5%;
+  font-size: 1.6rem;
+  width: 100%;
+  text-align: center;
 }
 
-.card-front {
-    background-color: var(--global-frontend-color);
+.card ul {
+  margin-top: 20px;
 }
 
-.card-back {
-    background-color: var(--global-backend-color);
+.card ul li {
+  margin: 10px 0;
+  list-style: disc;
 }
 
-.card a {
-    transition: opacity .2s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    width: 50%;
-    height: 100%;
+.card ul li a {
+  transition: color 0.2s ease;
+  padding: 5px;
 }
 
-.card a:hover {
-    opacity: .8;
+.card ul li a:hover {
+  color: var(--global-backend-color);
 }
 
 .card:hover {
-    transform: scale(0.925);
+  transform: scale(0.985);
 }
