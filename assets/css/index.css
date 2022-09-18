@@ -83,3 +83,15 @@ main {
 .card:hover {
   transform: scale(0.985);
 }
+
+@media screen and (max-width: 960px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .card {
+    width: 100%;
+  }
+}
